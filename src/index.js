@@ -4,9 +4,34 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { NetworkInfo, WalletProvider } from '@terra-money/wallet-provider';
+
+const mainnet = {
+  name: 'mainnet',
+  chainID: 'columbus-4',
+  lcd: 'https://lcd.terra.dev',
+};
+
+const testnet = {
+  name: 'testnet',
+  chainID: 'tequila-0004',
+  lcd: 'https://tequila-lcd.terra.dev',
+};
+
+const walletConnectChainIds = {
+  0: testnet,
+  1: mainnet,
+};
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <WalletProvider
+    defaultNetwork={mainnet}
+    walletConnectChainIds={walletConnectChainIds}
+    >
+      <App />
+    </WalletProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
