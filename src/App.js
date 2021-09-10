@@ -1,4 +1,5 @@
 import ConnectModal from './components/ConnectModal.js'
+import TxSample from './components/TxSample.js'
 
 function App() {
 
@@ -41,7 +42,11 @@ function App() {
                 </button>
               </div>
             </div>
-            <div className="col-span-6"></div>
+            <div className="col-span-6">
+              <div className="">
+                <TxSample />
+              </div>
+            </div>
           </div>
       </div>
     </div>
