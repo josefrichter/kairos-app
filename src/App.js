@@ -29,14 +29,13 @@ function App() {
                 <p className="text-gray-400 mb-2">Body Text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In dicta sapiente ut ipsam ad labore explicabo amet odit, nemo id quas non perferendis dolorem nihil debitis voluptates animi distinctio. Aliquam.</p>
               </div>
               <div className="mb-0 mt-10 pt-0">
-                <input type="text" placeholder="Form Field" className="px-3 py-3 mb-2 placeholder-blueGray-300 text-blueGray-600 relative bg-kairos-light rounded text-sm border border-blueGray-300 outline-none focus:outline-none focus:ring w-full"/>
-                <input type="text" placeholder="Form Field" className="px-3 py-3 mb-2 placeholder-blueGray-300 text-blueGray-600 relative bg-kairos-light rounded text-sm border border-blueGray-300 outline-none focus:outline-none focus:ring w-full"/>
-                <input type="text" placeholder="Form Field" className="px-3 py-3 mb-2 placeholder-blueGray-300 text-blueGray-600 relative bg-kairos-light rounded text-sm border border-blueGray-300 outline-none focus:outline-none focus:ring w-full"/>
-                <input type="text" placeholder="Form Field" className="px-3 py-3 mb-2 placeholder-blueGray-300 text-blueGray-600 relative bg-kairos-light rounded text-sm border border-blueGray-300 outline-none focus:outline-none focus:ring w-full"/>
+                <input type="text" placeholder="Form Field" className="input-default"/>
+                <input type="text" placeholder="Form Field" className="input-default"/>
+                <input type="text" placeholder="Form Field" className="input-default"/>
               </div>
               <div>
                 <button 
-                  className="w-full bg-kairos-dark text-white active:bg-kairos font-bold uppercase text-xs tracking-widest px-6 py-3 rounded shadow hover:shadow-lg hover:bg-kairos outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"
+                  className="btn-default" type="button"
                       >
                   Button
                 </button>

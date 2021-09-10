@@ -18,7 +18,7 @@ function Connect() {
                 <>
                 {availableInstallTypes.map((connectType) => (
                     <button
-                    className="w-full bg-kairos-dark text-white active:bg-kairos font-bold uppercase text-xs tracking-widest px-6 py-3 rounded shadow hover:shadow-lg hover:bg-kairos outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="w-full btn-default"
                     key={'install-' + connectType}
                     onClick={() => install(connectType)}
                     >
@@ -27,7 +27,7 @@ function Connect() {
                 ))}
                 {availableConnectTypes.map((connectType) => (
                     <button
-                    className="w-full bg-kairos-dark text-white active:bg-kairos font-bold uppercase text-xs tracking-widest px-6 py-3 rounded shadow hover:shadow-lg hover:bg-kairos outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="w-full btn-default"
                     key={'connect-' + connectType}
                     onClick={() => connect(connectType)}
                     >

@@ -6,7 +6,7 @@ export default function ConnectModal() {
   return (
     <>
       <button
-        className="absolute top-4 right-4 z-50 bg-kairos-dark text-white active:bg-kairos font-bold uppercase text-xs tracking-widest px-6 py-3 rounded shadow hover:shadow-lg hover:bg-kairos outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+        className="absolute top-4 right-4 z-50 btn-default"
         type="button"
         onClick={() => setShowModal(true)}
       >

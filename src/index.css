@@ -1,6 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-default {
+    @apply bg-kairos-dark text-white font-bold uppercase text-xs tracking-widest px-6 py-3 rounded shadow hover:shadow-lg hover:bg-kairos outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150;
+  },
+  .input-default {
+    @apply px-3 py-3 mb-2 placeholder-kairos text-kairos-dark relative bg-kairos-light rounded text-sm border border-kairos outline-none focus:outline-none focus:ring w-full
+  }
+}
 /* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

@@ -68,7 +68,7 @@ export default function TxSample() {
         <div>
           <p className="text-gray-400 mb-2">Send 1USD to {toAddress}</p>
           <button 
-            className="bg-kairos-dark text-white active:bg-kairos font-bold uppercase text-xs tracking-widest px-6 py-3 rounded shadow hover:shadow-lg hover:bg-kairos outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+            className="btn-default"
             onClick={send}>Send</button>
         </div>
       )}
