@@ -13,12 +13,12 @@ function Connect() {
     } = useWallet();
 
     return (
-        <section className="p-4 h-16">
+        <>
             {status === WalletStatus.WALLET_NOT_CONNECTED && (
                 <>
                 {availableInstallTypes.map((connectType) => (
                     <button
-                    className="float-right bg-kairos-dark text-white active:bg-kairos font-bold uppercase text-xs tracking-widest px-6 py-3 rounded shadow hover:shadow-lg hover:bg-kairos outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="w-full bg-kairos-dark text-white active:bg-kairos font-bold uppercase text-xs tracking-widest px-6 py-3 rounded shadow hover:shadow-lg hover:bg-kairos outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     key={'install-' + connectType}
                     onClick={() => install(connectType)}
                     >
@@ -27,7 +27,7 @@ function Connect() {
                 ))}
                 {availableConnectTypes.map((connectType) => (
                     <button
-                    className="float-right bg-kairos-dark text-white active:bg-kairos font-bold uppercase text-xs tracking-widest px-6 py-3 rounded shadow hover:shadow-lg hover:bg-kairos outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="w-full bg-kairos-dark text-white active:bg-kairos font-bold uppercase text-xs tracking-widest px-6 py-3 rounded shadow hover:shadow-lg hover:bg-kairos outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     key={'connect-' + connectType}
                     onClick={() => connect(connectType)}
                     >
@@ -38,14 +38,14 @@ function Connect() {
             )}
             {status === WalletStatus.WALLET_CONNECTED && (
                 <button 
-                className="float-right bg-kairos-dark text-white active:bg-kairos font-bold uppercase text-xs tracking-widest px-6 py-3 rounded shadow hover:shadow-lg hover:bg-kairos outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                className="bg-kairos-dark text-white active:bg-kairos font-bold uppercase text-xs tracking-widest px-6 py-3 rounded shadow hover:shadow-lg hover:bg-kairos outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                 onClick={
                     () => disconnect()
                 }>
                 Disconnect
                 </button>
             )}
-        </section>
+        </>
     )
 
 }

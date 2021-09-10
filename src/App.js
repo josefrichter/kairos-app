@@ -1,5 +1,4 @@
-import Connect from './components/Connect.js'
-// import './App.css';
+import ConnectModal from './components/ConnectModal.js'
 
 function App() {
 
@@ -7,7 +6,7 @@ function App() {
     <div className="min-h-screen">
       <div className="bg-kairos h-96">
         <div className="">
-          <Connect /> 
+          <ConnectModal /> 
         </div>
         <div className="container max-w-screen-xl mx-auto p-10 py-8 relative">
           <img className="absolute h-16 left-10 top-2 mt-4" src="kairos-logo.png" alt="statue"></img>
