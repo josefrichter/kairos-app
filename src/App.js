@@ -3,37 +3,43 @@ import logo from './logo.svg';
 
 function App() {
   return (
-    <div className="bg-yellow-50 min-h-screen">
+    <div className="min-h-screen">
+      <div className="bg-kairos h-96">
+        <div className="container mx-auto py-8 relative">
+          <img className="absolute h-16 left-0 top-0 mt-4" src="kairos-logo.png" alt="statue"></img>
+          <img className="absolute h-96 right-20 -bottom-32" src="statue1.png" alt="statue"></img>
+          <h1 className="text-white text-6xl font-bold mt-40">Form.</h1>
+          <h4 className="text-white text-xl">Change the World.<br/>
+          One form at the time.</h4>
+          
+        </div>
+      </div>
+      
       <div className="container mx-auto py-8">
-        <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-          <div className="md:flex">
-            <div className="md:flex-shrink-0">
-              <img className="h-48 w-full object-cover md:h-full md:w-48" src={logo} alt="Man looking at item at a store"></img>
+          <div className="grid grid-cols-12 gap-2">
+            <div className="col-span-6">
+              <div className="">
+                <h1 className="text-kairos-dark text-6xl font-bold mb-2">Heading H1</h1>
+                <h2 className="text-kairos-dark text-4xl font-bold mb-2">Heading H2</h2>
+                <h3 className="text-kairos-dark text-2xl font-bold mb-2">Heading H3</h3>
+                <p className="text-gray-400 mb-2">Body Text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In dicta sapiente ut ipsam ad labore explicabo amet odit, nemo id quas non perferendis dolorem nihil debitis voluptates animi distinctio. Aliquam.</p>
+              </div>
+              <div className="mb-0 mt-10 pt-0">
+                <input type="text" placeholder="Form Field" className="px-3 py-3 mb-2 placeholder-blueGray-300 text-blueGray-600 relative bg-kairos-light rounded text-sm border border-blueGray-300 outline-none focus:outline-none focus:ring w-full"/>
+                <input type="text" placeholder="Form Field" className="px-3 py-3 mb-2 placeholder-blueGray-300 text-blueGray-600 relative bg-kairos-light rounded text-sm border border-blueGray-300 outline-none focus:outline-none focus:ring w-full"/>
+                <input type="text" placeholder="Form Field" className="px-3 py-3 mb-2 placeholder-blueGray-300 text-blueGray-600 relative bg-kairos-light rounded text-sm border border-blueGray-300 outline-none focus:outline-none focus:ring w-full"/>
+                <input type="text" placeholder="Form Field" className="px-3 py-3 mb-2 placeholder-blueGray-300 text-blueGray-600 relative bg-kairos-light rounded text-sm border border-blueGray-300 outline-none focus:outline-none focus:ring w-full"/>
+              </div>
+              <div>
+                <button 
+                  className="w-full bg-kairos-dark text-white active:bg-kairos font-bold uppercase text-xs tracking-widest px-6 py-3 rounded shadow hover:shadow-lg hover:bg-kairos outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"
+                      >
+                  Button
+                </button>
+              </div>
             </div>
-            <div className="p-8">
-              <div className="uppercase tracking-wide text-sm text-yellow-900 font-semibold">Case study</div>
-              <a href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
-              <p className="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
-              <button class="h-10 px-5 my-2 text-white transition-colors duration-150 bg-yellow-900 rounded focus:shadow-outline hover:bg-yellow-700">Select</button>
-            </div>
+            <div className="col-span-6"></div>
           </div>
-        </div>
-        <div className="max-w-md mx-auto p-4 my-4 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-          <input class="w-full h-12 px-4 mb-2 text-lg text-gray-700 placeholder-gray-600 border rounded focus:shadow-outline" type="text" placeholder="Large input"/>
-          <input class="w-full h-10 px-3 mb-2 text-base text-gray-700 placeholder-gray-600 border rounded focus:shadow-outline" type="text" placeholder="Regular input"/>
-          <input class="w-full h-8 px-2 text-sm text-gray-700 placeholder-gray-600 border rounded focus:shadow-outline" type="text" placeholder="Small input"/>
-          <div class="relative inline-block w-full text-gray-700 my-2">
-            <select class="w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded appearance-none focus:shadow-outline" placeholder="Regular input">
-              <option>A regular sized select input</option>
-              <option>Another option</option>
-              <option>And one more</option>
-            </select>
-            <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
-            </div>
-          </div>
-          <button class="h-10 px-5 my-2 text-white transition-colors duration-150 bg-yellow-900 rounded focus:shadow-outline hover:bg-yellow-700">Submit</button>
-        </div>
       </div>
     </div>
   );
