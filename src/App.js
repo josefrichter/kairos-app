@@ -4,7 +4,7 @@ import logo from './logo.svg';
 function App() {
   return (
     <div className="min-h-screen">
-      <div className="bg-kairos h-96 p-10">
+      <div className="bg-kairos h-96">
         <div>
           <button 
             className="absolute top-10 right-10 bg-kairos-dark text-white active:bg-kairos font-bold uppercase text-xs tracking-widest px-6 py-3 rounded shadow hover:shadow-lg hover:bg-kairos outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"
@@ -12,8 +12,8 @@ function App() {
             Connect Wallet
           </button>
         </div>
-        <div className="container max-w-screen-xl mx-auto py-8 relative">
-          <img className="absolute h-16 left-0 top-0 mt-4" src="kairos-logo.png" alt="statue"></img>
+        <div className="container max-w-screen-xl mx-auto p-10 py-8 relative">
+          <img className="absolute h-16 left-10 top-2 mt-4" src="kairos-logo.png" alt="statue"></img>
           <img className="absolute h-96 right-20 -bottom-32" src="statue1.png" alt="statue"></img>
           <h1 className="text-white text-6xl font-bold mt-40">Form.</h1>
           <h4 className="text-white text-xl">Change the World.<br/>
